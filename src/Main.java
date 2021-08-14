@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Домашнее задание к занятию 1.3\n" +
                 "Потоки ввода-вывода. Работа с файлами. Сериализация\n" +
-                "Задача 2: Установка\n");
+                "Задача 1: Установка\n");
 
         String gamesPath = "T:" + SEP + "Program Files" + SEP + "Games";
         installTo(gamesPath);
