@@ -9,7 +9,10 @@ public class Main {
     private static final String SEP = separator;
 
     public static void main(String[] args) {
-        System.out.println("Задача 1: Установка" + "\n");
+        System.out.println("Домашнее задание к занятию 1.3\n" +
+                "Потоки ввода-вывода. Работа с файлами. Сериализация\n" +
+                "Задача 2: Установка\n");
+
         String gamesPath = "T:" + SEP + "Program Files" + SEP + "Games";
         installTo(gamesPath);
     }
