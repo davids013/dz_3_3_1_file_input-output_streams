@@ -26,14 +26,14 @@ public class Main {
                 if (newFile.createNewFile()) {
                     dateTime = LocalDateTime.now() + "\t";
                     status = "Файл " + newFile.getName() + " создан";
-                    System.out.println(status);
-                    status = dateTime + status;
                 } else {
-
+                    dateTime = LocalDateTime.now() + "\t";
+                    status = "Файл " + newFile.getName() + " не удалось создать";
                 }
-
+                System.out.println(status);
+                status = dateTime + status;
             } catch (IOException e) {
-                e.getMessage();
+                System.out.println(e.getMessage());
                 dateTime = LocalDateTime.now() + "\t";
                 status += "Ошибка при создании файла " + newFile.getName();
                 System.out.println(status);
@@ -55,7 +55,7 @@ public class Main {
             writer.write(data);
             System.out.println("Информация о ходе установки записана в файл " + file.getName());
         } catch (IOException e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
             System.err.println("Не удалось записать файл " + file.getName());
         }
     }
